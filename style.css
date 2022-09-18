@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+    font-size: 1.3ren;
+}
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+    /* background: #F5F5F5;
+    min-height: 100px; */
+
+    position: relative;
+width: 1440px;
+height: 1024px;
+
+background: #2BD75B;
+justify-content: center;
+display: flex;
+align-items: center;
+}
+.circle{
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(to right, blue, pink);
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+    left: 370px;
+    bottom: 160px;
+    /* font-size: 1rem; */
+
+}
+
+.calculator{
+
+    position: absolute;
+width: 656px;
+height: 736px;
+left: 421px;
+top: 185px;
+
+background: rgba(48, 159, 93, 0.55);
+opacity: 0.9;
+backdrop-filter: blur(8.5px);
+border-radius: 10px;
+padding: 2rem 1.5rem;
+z-index: 10;
+/* grid  */
+display: grid;
+gap: 1rem;
+grid-template-areas: 
+"display display display display"
+"ac c perc divide"
+"btn7 btn8 btn9 x"
+"btn4 btn5 btn6 sub"
+"btn1 btn2 btn3 plus"
+"btn0 btn0 dot equal"
+;
+
+
+}
+.calculator div{
+    background:rgb(230, 198, 198);
+
+    opacity: 0.9;
+/* border-radius: 20px; */
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(-12px 12px 14px rgba(0,0,0,0.25));
+    border-radius: 5px;
+}
+.calculator .display{
+    display: flex;
+    justify-content: flex-end;
+    background: white;
+    padding: 1rem;
+    font-size: 2.3rem;
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 6px;
+
+    /* align-items: flex-end; */
+}
+.display{
+    grid-area: display;
+    /* display: flex;
+    justify-content: flex-end;
+    background: white; */
+}
+
+.btn-ac {
+    grid-area: ac;
+}
+.btn-c {
+    grid-area: c;
+}
+.btn-perc {
+    grid-area: perc;
+}
+.btn-divide {
+    grid-area: divide;
+}
+.btn-7 {
+    grid-area: btn7;
+}
+.btn-8 {
+    grid-area:btn8;
+}
+.btn-9 {
+    grid-area:btn9;
+}
+.btn-x {
+    grid-area: x;
+}
+.btn-4 {
+    grid-area: btn4;
+}
+.btn-5 {
+    grid-area: btn5;
+}
+.btn-6 {
+    grid-area: btn6;
+}
+.btn-sub {
+    grid-area: sub;
+}
+.btn-1 {
+    grid-area: btn1;
+}
+.btn-2 {
+    grid-area: btn2;
+}
+.btn-3 {
+    grid-area:btn3;
+}
+.btn-plus {
+    grid-area: plus;
+}
+.btn-0 {
+    grid-area: btn0;
+}
+.btn-dot {
+    grid-area: dot;
+}
+.btn-equal {
+    grid-area: equal;
+}
